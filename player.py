@@ -8,11 +8,11 @@ class Player(Turtle):
         self.shape("turtle")
         self.color("black")
         self.penup()
+        self.left(90)
         self.reset()
     
     def reset(self):
         self.goto(STARTING_POSITION)
-        self.left(90)
 
     def move(self):
         self.forward(MOVE_DISTANCE)
