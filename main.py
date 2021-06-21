@@ -11,6 +11,7 @@ SPEED_INCREASE = 0.9
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.tracer(0)
+screen.title("Turtle Crossing by Island Huynh")
 player_icon = Player()
 level = Scoreboard()
 cars = CarManager()
