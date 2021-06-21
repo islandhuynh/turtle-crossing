@@ -7,7 +7,7 @@ MOVE_INCREMENT = 10
 
 class CarManager:
     def __init__(self):
-        self.cars = []
+        self.cars_array = []
     
     def create_car(self):
         new_car = Turtle("square")
@@ -15,8 +15,8 @@ class CarManager:
         new_car.penup()
         new_car.shapesize(1, 2, 1)
         new_car.goto(x = 300, y = random.randint(-250, 250))
-        self.cars.append(new_car)
+        self.cars_array.append(new_car)
 
     def move_cars(self):
-        for car in self.cars:
+        for car in self.cars_array:
             car.setx(car.xcor() - MOVE_INCREMENT )

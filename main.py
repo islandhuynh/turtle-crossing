@@ -29,5 +29,8 @@ while game_is_on:
     if player_icon.ycor() > FINISH_LINE_Y:
         player_icon.reset()
         level.increase_Score()
-    
+    for car in cars.cars_array:
+        if player_icon.distance(car) < 25:
+            game_is_on = False
+
 screen.exitonclick()
