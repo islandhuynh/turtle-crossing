@@ -31,6 +31,7 @@ while game_is_on:
         level.increase_Score()
     for car in cars.cars_array:
         if player_icon.distance(car) < 25:
+            level.game_over()
             game_is_on = False
 
 screen.exitonclick()
